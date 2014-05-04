@@ -10,8 +10,8 @@ places = ["Addison", "Algonquin" ,"Arlington Heights", "Barrington",  "Barringto
 
 
 
-
-while i < 52:
+amountOfPages = 52
+while i < amountOfPages:
 	print "http://housestudentapps.challengepost.com/registrants"+ "?page=" + str(i)
 	words = urllib2.urlopen("http://housestudentapps.challengepost.com/registrants"+ "?page=" + str(i)).read().replace(","," ")
 	
